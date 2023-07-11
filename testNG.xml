@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name = "first suite">
+    <listeners>
+        <listener class-name = "org.wwTestNgLao.ListenersTestNG">
+        </listener>
+    </listeners>
+    <test name = "Test1">
+        <groups>
+            <run>
+                <exclude name = "JUICES">
+                </exclude>
+                <include name = "MONI">
+                </include>
+            </run>
+        </groups>
+        <classes>
+            <!--<class name ="org.wwTestNgLao.BeforeAfterSuite"> </class>
+                <class name = "org.wwTestNgLao.Dependency"> </class>
+            <class name = "org.wwTestNgLao.BeforeAfterSuite"> </class>-->
+            <class name = "org.wwTestNgLao.Grouping"> </class>
+        </classes>
+    </test>
+</suite>
